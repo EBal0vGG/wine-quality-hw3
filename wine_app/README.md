@@ -1,5 +1,7 @@
 # Подборка вин
 
+Приложение: [Открыть подборку вин](https://v2x9qmrwhp32aahmxvsfld.streamlit.app).
+
 Проверено с Python 3.11.18. Из папки `wine_app`:
 
 ```bash
