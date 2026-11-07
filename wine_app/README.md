@@ -11,6 +11,8 @@ python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
+Для Streamlit Community Cloud: ветка `main`, файл `wine_app/app.py`, в **Advanced settings → Python version** выберите **3.11** перед нажатием **Deploy**. Уже созданное приложение с другой версией Python нужно удалить в Community Cloud и создать заново.
+
 `model.joblib`, `config.json` и `test.csv` создаются ноутбуком `HW3_MMDA.ipynb`. Модель в приложении не обучается. Общий порог в боковой панели применяется во всех вкладках.
 
 `st.cache_resource` сохраняет один объект модели для всех сессий. `st.cache_data` сохраняет таблицу и вероятности, возвращая их копии. Без декоратора `joblib.load` заново читал бы модель с диска при каждом изменении виджетов.
